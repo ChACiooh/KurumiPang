@@ -251,12 +251,7 @@ ostream& operator<<(ostream& os, KurumiPang& kp)
 istream& operator>>(istream& is, KurumiPang& kp)
 {
 	for(int y=0;y<kp.Height();y++)
-	{
-		for(int x=0;x<kp.Width();x++)
-		{
-			is >> kp(x,y);
-		}
-	}
+		for(int x=0;x<kp.Width();x++)	is >> kp(x,y);
 	return is;
 }
 
